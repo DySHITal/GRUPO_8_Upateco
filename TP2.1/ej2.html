@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP2.1 - Ejercicio 2</title>
+</head>
+<body>
+    <!-- Ejercicio 2
+Usando el mismo formulario del ejercicio anterior se pide agregar un valor por defecto al
+campo de nombre y apellido, un botón que tenga el valor de “Enviar!” y acomodar el
+formulario con saltos de líneas”. -->
+    <div>
+        <form id="form" name="formu" action="" method="post" target="_blank">
+            <label for="firstname">Nombre:</label>
+            <input id="nombre" class="control" type="text" name="firstname" placeholder="Ingrese su nombre..." value="Fulano de Tal" > <br><br>
+            <label for="lastname">Apellido:</label>
+            <input id="apellido" class="control" type="text" name="lastname" placeholder="Ingrese su apellido..." > <br><br>
+            <label for="email">E-mail:</label>
+            <input id="email" class="control" type="email" name="email" placeholder="ejemplo@sucorreo.com" > <br><br>
+            <label for="telefono">Telefono:</label>
+            <input id="tel" class="control" type="tel" name="telefono" placeholder="+5411XXXXXXXX" > <br><br>
+            <label>Consultas:<textarea id="consulta" class="control" name="comentarios" cols="30" rows="5" placeholder="Escriba su consulta aqui..." ></textarea></label> <br><br>
+            <input class="boton" type="submit" value="enviar" id="enviar">
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP2.1 - Ejercicio 5</title>
+    <link rel="stylesheet" href="css/ej5.css">
+</head>
+<body>
+    <!-- Ejercicio 5
+Crear una página de “inicio” bien estructurada que contenga un encabezado, dos secciones,
+un pie de página y que cumpla los siguientes ítems:
+● El encabezado deberá contener un logo con un tamaño de 100x100px.
+● Una de las secciones deberá contener una lista desordenada con enlaces de algunos
+servicios de google por ejemplo YouTube, Gmail, Drive etc.
+● El pie de página deberá contener el formulario de contacto creado previamente. -->
+    
+    <header>
+        <img src="https://plataforma.academiacimneiber.com/pluginfile.php/1/theme_moove/logo/1687457325/LOGO_Academia%20color%20op%20B.png" alt="" width="100" height="100">
+    </header>
+    <main>
+        <div class="flex">
+            <section class="section">
+                <p>
+                   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae similique dolores, ut ab possimus suscipit. Eius ipsa repudiandae nemo soluta debitis eligendi, pariatur quod distinctio itaque culpa fuga dolorum ullam.
+                   Nihil sequi accusamus amet totam illo voluptatibus! Voluptas quo iure at dolor autem perferendis sequi, adipisci unde temporibus exercitationem maxime, dolores consequatur enim voluptatem ipsam architecto magni, omnis neque atque!
+                   Debitis laborum laudantium enim quibusdam amet neque pariatur quam temporibus, placeat iusto. Obcaecati consectetur dicta quaerat. Eos rem atque, nesciunt eius ullam debitis aperiam velit sequi nam id ex adipisci.
+                   Quis, vitae eaque suscipit fugit consectetur optio eligendi voluptatem doloremque cupiditate quo molestiae culpa facere tempore, nihil libero commodi quod at doloribus minima provident accusantium harum similique facilis adipisci. Pariatur.
+                   Sapiente quam ex ducimus, animi ipsum inventore expedita obcaecati earum voluptatem reprehenderit distinctio optio facilis! Labore maxime rem perferendis, quae nemo cupiditate tempore provident dolorem suscipit. Suscipit id quae doloribus?
+                   Commodi officiis voluptate praesentium itaque suscipit. Odit ipsum quasi, eos modi optio, suscipit amet quam maxime inventore dolorem ipsam unde atque illo natus magnam ullam at fugiat? Blanditiis, magni nulla.
+                   Eos necessitatibus atque a aliquid quaerat minima facere, doloribus officiis iusto laboriosam dolores labore odit dignissimos dolorem. Vero eius distinctio nulla tempora sed et corporis officiis maxime veniam beatae? Saepe!
+                   Deleniti earum mollitia, architecto consequatur dolorem accusantium sapiente nobis distinctio neque enim commodi, dolore atque? Corrupti vitae explicabo harum, deleniti tenetur illum, adipisci ullam facilis nam magni vel, quidem officia.
+                   Mollitia ex ratione ea cupiditate dolor natus amet et blanditiis error laboriosam voluptatibus porro eos veritatis accusamus aliquam eaque facere harum rerum, pariatur voluptates distinctio minima eligendi! Expedita, obcaecati totam.
+                   Provident possimus alias, sequi ducimus aliquid consequatur iusto fugiat vitae voluptatum aperiam, natus molestias soluta ab ullam minima voluptatibus error officia omnis eius quos? Iure dolorem vero quisquam itaque perferendis.
+                </p>
+            </section>
+            <section class="section">
+                <ul>
+                    <li><a class="redes" href="https://www.youtube.com/">YouTube</a> <br></li>
+                    <li><a class="redes" href="https://gmail.google.com">Gmail</a> <br></li>
+                    <li><a class="redes" href="https://drive.google.com">Drive</a> <br></li>
+                    <li><a class="redes" href="https://meet.google.com">Meet</a></li>
+                </ul>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="formulario">
+            <form id="form" name="formu" action="https://formspree.io/f/mzbyqklw" method="post" target="_blank">
+                <label for="firstname">Nombre:</label>
+                <input id="nombre" class="control" type="text" name="firstname" placeholder="Ingrese su nombre..." value="Fulano de Tal" > <br><br>
+                <label for="lastname">Apellido:</label>
+                <input id="apellido" class="control" type="text" name="lastname" placeholder="Ingrese su apellido..." > <br><br>
+                <label for="email">E-mail:</label>
+                <input id="email" class="control" type="email" name="email" placeholder="ejemplo@sucorreo.com" > <br><br>
+                <label for="telefono">Telefono:</label>
+                <input id="tel" class="control" type="tel" name="telefono" placeholder="+5411XXXXXXXX" > <br><br>
+                <label>Consultas:<textarea id="consulta" class="control" name="comentarios" cols="30" rows="5" placeholder="Escriba su consulta aqui..." ></textarea></label> <br><br>
+                <input class="boton" type="submit" value="enviar" id="enviar">
+            </form>
+        </div>
+    </footer>
+</body>
+</html>

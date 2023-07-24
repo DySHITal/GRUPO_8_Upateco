@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: aliceblue;
+    font-family: monospace;
+}
+
+header{
+    text-align: center;
+    background-color: rgb(211, 234, 255); 
+}
+
+h1{
+    text-align: center;
+    font-size: 5rem;
+    margin: 2rem;
+}
+
+p{
+    position: relative;
+    left: 10%;
+    width: 80%;
+    font-size: larger;
+    text-align: justify;
+    margin: 5%;
+    border: 1px rgb(135, 135, 196) solid;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.img{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    left: 35%;
+}

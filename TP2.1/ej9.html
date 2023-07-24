@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>TP2.2 - Ejercicio 9</title>
+</head>
+<body>
+    <!-- Ejercicio 9
+Dado el documento HTML que se encuentra en la plataforma se pide corregir los errores que
+contiene. -->
+    <header style="background-color: aquamarine;" >
+        <!-- Se cambio el codigo de path o ruta de la img para mejorar el aspecto -->
+        <img src="https://plataforma.academiacimneiber.com/pluginfile.php/1/theme_moove/logo/1687457325/LOGO_Academia%20color%20op%20B.png" alt="logo" width="100" height="100">
+        <!-- Se cambio el codigo de path o ruta de los links para mejor funcionalidad -->
+        <a href="./ej9.html">Inicio</a>
+        <a href="./ej6.html">Nosotros</a>
+        <a href="./contacto.html">Contacto</a>
+    </header>
+    <main>
+        <div>
+            <div style="text-align: center;">
+                <h1 >Titulo</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+           uscipit, numquam!</p>
+           <!-- Se le agrego el atributo "Alt" a la etiqueta img, por si no se encuentra la imagen muestre ese texto, y tambien para cuando se usa una asistencia para no videntes -->
+                <img src="./image.png" alt="IMAGEN DEL TITULO">
+            </div>
+            <div style="text-align: center;">
+                <!-- Se modifico el h1 por un h2 ya que es un subtitulo y no un titulo. Aparte se recomienta tener un solo h1 por pagina para mejor SEO -->
+               <h2 >SubTitulo</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                 uscipit, numquam!</p>
+                <video>
+                    <!-- Se cambio el texto en type por el correspondiente -->
+                    <source src="./video.mp4" type="video/mp4">  
+                </video>
+            <!-- Se movio el cierre del div por estar mal ubicado -->
+            </div>
+            <div style="text-align: center;">
+                <h6>Lorem ipsum dolor sit amet consectetur, adipisicing eli
+                     . Eos, <br>
+                     accusantium blanditiis impedit nostrum asperiores reic
+               endis necessitatibus nulla illum dolorem
+                    eveniet earum, rerum error quas atque facere! Quam il
+                    o quis ducimus?</h6>
+            </div>
+        </div>
+    </main>
+    <footer style="background-color: aquamarine;">
+        <!-- Se cambio h1 por h2 -->
+        <h2>Redes</h2>
+        <ul>
+            <!-- Se cambio el href de # a las direcciones especificadas y se les agrego el target para que abran en paginas nuevas -->
+            <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+            <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+            <li><a href="https://www.google.com/intl/es-419/drive/" target="_blank">Drive</a></li>
+        </ul>
+        <p style="text-align: center;">Lorem ipsum dolor sit amet.</p>
+    </footer>
+</body>
+</html>

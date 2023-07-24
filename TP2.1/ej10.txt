@@ -1,0 +1,37 @@
+Ejercicio 10
+Haciendo uso del anterior documento HTML se pide explicar de forma escrita como está
+formada la web y que elementos contiene.
+
+El HTML brindado en la plataforma es formada de la siguiente manera:
+
+  Al comienzo del archivo tenemos las etiquetas de configuracion del HTML
+
+  <!DOCTYPE html> --> Tipo de archivo
+  <html lang="en"> --> Idioma de la pagina
+  <head> --> Apertura de etiqueta
+    <meta charset="UTF-8"> --> Set de caracteres que se va a usar
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> --> Como se mostrará por pantalla, escalas, etc.
+    <link rel="stylesheet" href="./index.css"> --> Referencia a un archivo CSS
+    <title>TP2.2 - Ejercicio 9</title> --> Titulo que aparecera en la ventana o pestaña del navegador al abrir el archivo.
+  </head> --> Cierre de etiqueta
+
+  Cuerpo (Body): Dentro del cuerpo es donde vamos a armar la estructura para la pagina web a mostrar al usuario. Dentro de ella tendremos el header, main y footer por lo general.
+
+  Encabezado (Header):
+		La etiqueta header tiene un style para cambiar el color de fondo. 
+		Dentro de la etiqueta nos encontramos con cuatro etiquetas mas:
+		* Img: Se carga una imagen ya sea local u online.
+		* Links: Se cargaron 3 hrefs a modo de hacer un menu de navegación.
+		Esto se lo podría haber agregado a una etiqueta NAV para mejor estructura, aunque en este caso no es tan necesario.
+
+  Principal (Main):
+		Tenemos un DIV principal que contiene varios DIV adentro.
+		Cada DIV interior tiene un style para alinear el texto en el centro.
+		Dentro de ellos podemos ver etiquetas H1, H2 y H6 son etiquetas de títulos que se emplean para identificar temas y subtemas.
+		También podemos encontrar etiquetas P, que hacen referencia a un parrafo.
+		También nos encontramos con etiqueras IMG y VIDEO, cada uno carga respectivamente una imagen o un video, ya sea local u online.
+
+  Pie de página (Footer):
+		El footer también posee un style de color de fondo.
+		Dentro del footer encontramos un H2, UL y P. H2 y P ya se explicó que son.
+		El UL (unorderer list) es una lista desordenada que tiene tres links href dentro de unas subetiquetas LI. Cada uno de estos links redirecciona en una pagina nueva a unas redes sociales.

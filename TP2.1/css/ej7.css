@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: aliceblue;
+    font-family: monospace;
+}
+
+.nav{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    background-color: rgb(119, 119, 119);
+    padding-bottom: .5%;
+}
+
+.nav-btns{
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+    transition: .5s;
+    padding: 1%;
+    border-radius: 10px;
+}
+
+.redes:hover, .nav-btns:hover{
+    text-decoration: underline;
+    font-size: 2rem;
+    color: rgb(235, 167, 122);
+}
+
+.flex{
+    display: flex;
+}
+
+.section{
+    width: 50%;
+    margin: 20px;
+}
+ 
+.section > ul{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.redes{
+    text-decoration: none;
+    color: black;
+    transition: .5s;
+}
+
+.formulario{
+    width: 100%;
+    padding: 1%;
+    background-color: rgb(250, 164, 164);
+    text-align: center;
+    margin-top: 6%;
+}
+
+.control{
+    width: 25rem;
+    background-color: rgb(154, 157, 160);
+}
+
+#form{
+    background-color: rgb(250, 164, 164);
+}
