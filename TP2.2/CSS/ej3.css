@@ -1,0 +1,25 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+img{
+    border-radius: 50%;
+}
+
+.box{
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes rotate{
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
