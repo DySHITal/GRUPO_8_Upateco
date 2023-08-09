@@ -5,6 +5,16 @@
     background-color: aliceblue;
     font-family: monospace;
 }
+#tabla{
+    table-layout: auto;
+    height: 500px;
+    width: 100%;
+    background-color: rgb(169, 169, 233);
+    border-collapse: collapse;
+    border-color: black;
+    border-style: double;
+    
+}
 h1{
     text-align: center;
     font-size: 3rem;
