@@ -27,6 +27,6 @@ function esPrimo(numero) {
     return suma;
   }
   
-  const numero = 10; // Cambia este número para obtener la suma de primos menores o iguales a un número diferente
+  const numero = 10; 
   console.log('La suma de números primos menores o iguales a', numero, 'es:', sumaPrimos(numero));
   
