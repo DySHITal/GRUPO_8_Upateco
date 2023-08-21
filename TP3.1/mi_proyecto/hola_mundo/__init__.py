@@ -2,6 +2,7 @@ from flask import Flask, request
 from config import Config
 from datetime import datetime
 import json
+from pilas import Stack, balanceador
 
 
 def init_app():
@@ -164,21 +165,40 @@ def init_app():
         return codigo_resultado
 
     @app.route('/decode/<string:morse_code>') #Ejercicio 12
-    def decode(morse):
+    def decode(morse_code):
         with open('hola_mundo/static/morse_code.json', 'r') as fo:
             morse_data = json.load(fo)
             texto_decodificado = ''
-            palabras = morse.split('^')
+            palabras = morse_code.split('^')
             for palabra in palabras:
                 letras = palabra.split('+')
                 palabra_decodificada = ''
                 for letra in letras:
-                    if letra in morse_data:
-                        palabra_decodificada += morse_data[letra]
-                    elif letra == '':
-                        palabra_decodificada += ' '
+                    if letra in morse_data['letters'].values():
+                        clave = [key for key, value in morse_data['letters'].items() if value == letra][0]
+                        palabra_decodificada += clave
+                        print(palabra_decodificada)
+                    else:
+                        print('no found')
                 texto_decodificado += palabra_decodificada + ' '
-        frase_decodificada = ' '.join(palabra_decodificada)
+        frase_decodificada = texto_decodificado.strip()
         return frase_decodificada
+
+    @app.route('/convert/binary/<string:num>') #Ejercicio 13
+    def convert(num):
+        decimal = 0
+        exp = 0
+        for digito in reversed(num):
+            if digito == '1':
+                decimal += 2**exp
+            exp += 1
+        return str(decimal)
+
+    @app.route('/balance/<string:input>') #Ejercicio 14
+    def balance(input):
+        if balanceador(input):
+            return {'balanced': True}
+        else:
+            return {'balanced': False}
 
     return app
