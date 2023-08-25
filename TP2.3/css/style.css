@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: aliceblue;
+    font-family: monospace;
+}
+#tabla{
+    table-layout: auto;
+    height: 500px;
+    width: 100%;
+    background-color: rgb(169, 169, 233);
+    border-collapse: collapse;
+    border-color: black;
+    border-style: double;
+    
+}
+h1{
+    text-align: center;
+    font-size: 3rem;
+    margin: 2rem;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.25);
+}
+.nav{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    background-color: rgb(119, 119, 119);
+    padding-bottom: .5%;
+}
+
+.nav-btns{
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+    transition: .5s;
+    padding: 1%;
+    border-radius: 10px;
+}
+
+.redes:hover, .nav-btns:hover{
+    text-decoration: underline;
+    font-size: 2rem;
+    color: rgb(235, 167, 122);
+}
+
+.flex{
+    display: flex;
+}
+
+.section{
+    width: 50%;
+    margin: 20px;
+}
+ 
+.section > ul{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.redes{
+    text-decoration: none;
+    color: black;
+    transition: .5s;
+}
+
+.formulario{
+    width: 100%;
+    padding: 1%;
+    background-color: rgb(250, 164, 164);
+    text-align: center;
+    margin-top: 6%;
+}
+
+.control{
+    width: 25rem;
+    background-color: rgb(154, 157, 160);
+}
+
+#form{
+    background-color: rgb(250, 164, 164);
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f2f2f2;
+  }
+  
+  .chat-container {
+    border: 1px solid #ccc;
+    width: 300px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .chat-box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    height: 200px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
