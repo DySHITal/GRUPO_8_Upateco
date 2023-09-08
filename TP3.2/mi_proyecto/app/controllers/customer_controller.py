@@ -26,7 +26,6 @@ class CustomerController:
             }
             return response, 200
         elif request.method == 'POST':
-            print('create')
             cust = Customer(
                 first_name= request.args.get('first_name', ''),
                 last_name= request.args.get('last_name', ''),
@@ -50,8 +49,8 @@ class CustomerController:
             city= request.args.get('city'),
             state= request.args.get('state'),
             zip_code= request.args.get('zip_code'),
-            customer_id= request.args.get('customer_id',
-            ))
+            customer_id= request.args.get('customer_id')
+            )
         Customer.modify_customer(first_name, last_name, email, phone, street, city, state, zip_code, customer_id)
         return {'msg':'Cliente modificado con éxito'}, 200
 

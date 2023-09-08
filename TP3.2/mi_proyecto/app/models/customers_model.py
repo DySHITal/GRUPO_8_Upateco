@@ -16,7 +16,7 @@ class Customer:
     def get_customer(cls, customer_id):
         query = 'SELECT * FROM sales.customers WHERE customer_id = %s'
         params = (customer_id,)
-        result = DatabaseConnection.fetch_one(query, params)
+        result = DatabaseConnection.fetch_one(query, params, db_name = 'sales')
         if result is not None:
             return{
                 'id': customer_id,
@@ -35,7 +35,7 @@ class Customer:
     def get_customers_state(cls, state):
         query = 'SELECT * FROM sales.customers WHERE state = %s'
         params = (state,)
-        result = DatabaseConnection.fetch_all(query, params)
+        result = DatabaseConnection.fetch_all(query, params, db_name = 'sales')
         if result is not None:
             return{
                 'id': result[0],
@@ -53,7 +53,7 @@ class Customer:
     @classmethod
     def get_customers(cls):
         query = 'SELECT * FROM sales.customers'
-        result = DatabaseConnection.fetch_all(query)
+        result = DatabaseConnection.fetch_all(query, db_name = 'sales')
         if result is not None:
             return{
                 'id': result[0],
@@ -72,7 +72,7 @@ class Customer:
     def create_customers(cls, customer):
         query = 'INSERT INTO sales.customers (first_name, last_name, email, phone, street, city, state, zip_code) VALUES (%s,%s,%s,%s,%s,%s,%s,%s)'
         params = (customer.first_name, customer.last_name, customer.email, customer.phone, customer.street, customer.city, customer.state, customer.zip_code)
-        DatabaseConnection.execute_query(query, params)
+        DatabaseConnection.execute_query(query, params, db_name = 'sales')
     
     @classmethod
     def modify_customer(cls, first_name, last_name, email, phone, street, city, state, zip_code, customer_id):
@@ -81,10 +81,10 @@ class Customer:
         WHERE customer_id = %s
         '''
         params = (first_name, last_name, email, phone, street, city, state, zip_code, customer_id)
-        DatabaseConnection.execute_query(query, params)
+        DatabaseConnection.execute_query(query, params, db_name = 'sales')
 
     @classmethod
     def delete_customer(cls, customer_id):
         query = 'DELETE FROM sales.customers WHERE customer_id = %s'
         params = (customer_id,)
-        DatabaseConnection.execute_query(query, params)
+        DatabaseConnection.execute_query(query, params, db_name = 'sales')
